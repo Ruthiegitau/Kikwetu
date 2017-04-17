@@ -15,23 +15,44 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CHAKULA"
+        android:text="Kikwetu"
         android:textColor="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:id="@+id/textView" />
+        android:id="@+id/appNameTextView"/>
 
-    <TextView
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/locationTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="foodie 2017 "
-        android:textAlignment="center"
-        android:textSize="20dp"
-        android:textColor="#fff000"
+        android:id="@+id/locationEditText"
+        android:layout_above="@+id/ClickHereButton"
+        android:hint="Enter Category"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ClickHere"
+        android:id="@+id/ClickHereButton"
+        android:background="@color/colorAccent"
         android:layout_alignParentBottom="true"
-         />
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
